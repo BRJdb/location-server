@@ -1,0 +1,19 @@
+curl --request GET \
+    --url http://localhost:3001/list
+
+###
+
+curl --request POST  \
+    --url http://localhost:3001/create
+    --header 'Content-Type: application/json'
+    --data '{
+    "phone" : "2233222",
+    "qr" : "heufhefuhuef",
+    "longitude" : "1616161661",
+    "latitude" : "2828288282"
+}'
+
+###
+
+curl --request DELETE \
+    --url http://localhost:3001/delete/64560eb7c16b7109c69cb3e0
